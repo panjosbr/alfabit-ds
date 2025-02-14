@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@alfabit-panjos/button": ["libs/button/src/index.ts"]
+      "@alfabit-panjos/button": ["libs/button/src/index.ts"],
+      "@alfabit-panjos/ds-storybook": ["libs/storybook/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

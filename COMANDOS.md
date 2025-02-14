@@ -4,7 +4,12 @@ Link de referencia: https://nx.dev/nx-api/angular/generators/library
 
 ## Iniciar a aplicação
 ```
-npm nx run alfabit:serve
+npx nx run alfabit:serve
+```
+
+## Iniciar a aplicação do Storybook
+```
+npx nx run storybook:storybook
 ```
 
 ## Gera uma nova lib
@@ -46,4 +51,14 @@ npx create-nx-workspace@19.0.4 alfabit-monorepo --preset=angular-monorepo
 
 ```
 npm i -g nx@19.0.4
+```
+
+## Gerar uma lib pro Storybook
+```
+npx nx generate @nx/angular:library storybook --directory=libs/storybook --publishable --importPath=@alfabit-panjos/ds-storybook --dry-run
+```
+
+## Adicionar configuração de Storybook em um projeto
+```
+nx g @nx/angular:storybook-configuration
 ```
